@@ -1,0 +1,244 @@
+Sample	Taxonomy	Count
+Fluosample1	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	27165
+Fluosample1	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	22885
+Fluosample1	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	3990
+Fluosample1	k:Eukaryota(1.00),p:Cryptophyceae(0.57),c:Cryptomonadales(0.57),o:Rhodomonas(0.57),f:Rhodomonas sp. CCMP743(0.57)	1529
+Fluosample1	k:Eukaryota(1.00),p:SAR(0.86),c:Stramenopiles(0.86),o:Ochrophyta(0.82),f:Chrysophyceae(0.82),g:Ochromonadales(0.82),s:Ochromonas(0.82)	918
+Fluosample1	k:Eukaryota(1.00),p:Archaeplastida(0.56),c:Chloroplastida(0.56),o:Charophyta(0.56),f:Phragmoplastophyta(0.56),g:Streptophyta(0.56),s:Embryophyta(0.56)	366
+Fluosample1	k:Eukaryota(1.00),p:Archaeplastida(0.15),c:Chloroplastida(0.15),o:Charophyta(0.15),f:Phragmoplastophyta(0.15),g:Streptophyta(0.15),s:Embryophyta(0.15)	350
+Fluosample1	k:Eukaryota(1.00),p:Archaeplastida(0.95),c:Chloroplastida(0.95),o:Charophyta(0.95),f:Phragmoplastophyta(0.95),g:Streptophyta(0.95),s:Embryophyta(0.95)	163
+Fluosample1	k:Eukaryota(1.00),p:SAR(0.85),c:Stramenopiles(0.85),o:Ochrophyta(0.85),f:Chrysophyceae(0.85),g:Ochromonadales(0.82),s:Ochromonas(0.82)	108
+Fluosample1	k:Eukaryota(1.00),p:SAR(0.82),c:Stramenopiles(0.81),o:Ochrophyta(0.78),f:Chrysophyceae(0.76),g:Ochromonadales(0.76),s:Ochromonas(0.76)	5
+Fluosample1	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	4
+Fluosample1	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(1.00),s:Ochromonas(1.00)	2
+Fluosample1	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Holozoa(1.00),g:Choanozoa(1.00),s:Metazoa(1.00)	1
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	32810
+Fluosample2	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	29416
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	4831
+Fluosample2	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	4379
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.89),f:Rhodomonas sp. CCMP743(0.89)	1411
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(0.87),c:Obazoa(0.87),o:Opisthokonta(0.87),f:Nucletmycea(0.87),g:Fungi(0.87),s:Dikarya(0.87)	1333
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Holozoa(1.00),g:Choanozoa(1.00),s:Metazoa(1.00)	750
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(0.95),c:Cryptomonadales(0.95),o:Rhodomonas sp. KMMCC 574(0.77)	561
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.39),c:Rhizaria(0.23),o:Retaria(0.23),f:Polycystinea(0.23),g:Spumellaria(0.23),s:uncultured(0.24)	176
+Fluosample2	k:Eukaryota(1.00),p:Discoba(0.48),c:Jakobida(0.48),o:uncultured dinoflagellate(0.48)	175
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.15),c:Chloroplastida(0.15),o:Charophyta(0.15),f:Phragmoplastophyta(0.15),g:Streptophyta(0.15),s:Embryophyta(0.15)	170
+Fluosample2	k:Eukaryota(1.00),p:Discoba(0.20),c:Jakobida(0.20),o:uncultured dinoflagellate(0.20)	138
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.78),c:Stramenopiles(0.78),o:Ochrophyta(0.78),f:Chrysophyceae(0.78),g:Ochromonadales(0.78),s:Ochromonas(0.78)	120
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(0.57),c:Cryptomonadales(0.57),o:Rhodomonas(0.57),f:Rhodomonas sp. CCMP743(0.57)	100
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.94),c:Chloroplastida(0.94),o:Charophyta(0.94),f:Phragmoplastophyta(0.94),g:Streptophyta(0.94),s:Embryophyta(0.94)	88
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.86),c:Stramenopiles(0.86),o:Ochrophyta(0.82),f:Chrysophyceae(0.82),g:Ochromonadales(0.82),s:Ochromonas(0.82)	73
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.56),c:Chloroplastida(0.56),o:Charophyta(0.56),f:Phragmoplastophyta(0.56),g:Streptophyta(0.56),s:Embryophyta(0.56)	55
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	34
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.76),c:Chloroplastida(0.75),o:Charophyta(0.75),f:Phragmoplastophyta(0.75),g:Streptophyta(0.75),s:Embryophyta(0.75)	31
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.95),c:Chloroplastida(0.95),o:Charophyta(0.95),f:Phragmoplastophyta(0.93),g:Streptophyta(0.93),s:Embryophyta(0.91)	27
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(0.50),c:Obazoa(0.49),o:Opisthokonta(0.49),f:Holozoa(0.48),g:Choanozoa(0.48),s:Metazoa(0.48)	25
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.99),c:Stramenopiles(0.99),o:Ochrophyta(0.99),f:Chrysophyceae(0.99),g:Ochromonadales(0.98),s:Ochromonas(0.98)	24
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.85),c:Stramenopiles(0.85),o:Ochrophyta(0.85),f:Chrysophyceae(0.85),g:Ochromonadales(0.82),s:Ochromonas(0.82)	14
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(0.95),c:Obazoa(0.94),o:Opisthokonta(0.94),f:Holozoa(0.92),g:Choanozoa(0.92),s:Metazoa(0.92)	12
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(0.91),c:Obazoa(0.91),o:Opisthokonta(0.91),f:Nucletmycea(0.84),g:Fungi(0.84),s:Dikarya(0.84)	10
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.97),c:Chloroplastida(0.97),o:Charophyta(0.97),f:Phragmoplastophyta(0.97),g:Streptophyta(0.97),s:Embryophyta(0.97)	10
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(0.82),c:Cryptomonadales(0.82),o:Rhodomonas(0.82),f:Rhodomonas sp. CCMP743(0.82)	6
+Fluosample2	k:Eukaryota(1.00),p:SAR(1.00),c:Rhizaria(1.00),o:Cercozoa(1.00),f:Cercomonadidae(1.00),g:Cercomonas(0.90),s:Cercomonas sp. ATCC 50316(0.90)	5
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(0.88),c:Obazoa(0.88),o:Opisthokonta(0.88),f:Holozoa(0.88),g:Choanozoa(0.88),s:Metazoa(0.88)	4
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.93),c:Alveolata(0.91),o:Protalveolata(0.55),f:Syndiniales(0.18),g:Syndiniales Group I(0.10),s:uncultured eukaryote(0.08)	4
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(0.28),c:Cryptomonadales(0.28),o:Rhodomonas(0.28),f:Rhodomonas sp. CCMP743(0.28)	3
+Fluosample2	k:Eukaryota(1.00),p:Amorphea(0.92),c:Obazoa(0.92),o:Opisthokonta(0.92),f:Holozoa(0.92),g:Choanozoa(0.92),s:Metazoa(0.92)	2
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.95),c:Chloroplastida(0.95),o:Charophyta(0.95),f:Phragmoplastophyta(0.95),g:Streptophyta(0.95),s:Embryophyta(0.95)	2
+Fluosample2	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	2
+Fluosample2	k:Eukaryota(1.00),p:Archaeplastida(0.88),c:Chloroplastida(0.88),o:Charophyta(0.88),f:Phragmoplastophyta(0.88),g:Streptophyta(0.88),s:Embryophyta(0.88)	1
+Fluosample2	k:Eukaryota(1.00),p:Cryptophyceae(0.97),c:Cryptomonadales(0.97),o:Rhodomonas(0.97),f:Rhodomonas sp. CCMP743(0.97)	1
+Fluosample2	k:Eukaryota(1.00),p:SAR(0.92),c:Stramenopiles(0.90),o:Ochrophyta(0.90),f:Chrysophyceae(0.90),g:Ochromonadales(0.90),s:Ochromonas(0.89)	1
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	32596
+Fluosample3	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	28955
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas marina(0.87)	1773
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.57),c:Cryptomonadales(0.57),o:Rhodomonas(0.57),f:Rhodomonas sp. CCMP743(0.57)	1301
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.86),c:Stramenopiles(0.86),o:Ochrophyta(0.82),f:Chrysophyceae(0.82),g:Ochromonadales(0.82),s:Ochromonas(0.82)	703
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	653
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.89),f:Rhodomonas sp. CCMP743(0.89)	424
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(0.96),s:Cryptomycota(0.72)	337
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.86),c:Obazoa(0.86),o:Opisthokonta(0.86),f:Nucletmycea(0.86),g:Fungi(0.81),s:Dikarya(0.81)	116
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.99),c:Stramenopiles(0.99),o:Ochrophyta(0.99),f:Chrysophyceae(0.99),g:Ochromonadales(0.98),s:Ochromonas(0.98)	107
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.73),c:Cryptomonadales(0.73),o:Rhodomonas(0.73),f:Rhodomonas marina(0.64)	93
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.97),c:Obazoa(0.97),o:Opisthokonta(0.97),f:Nucletmycea(0.96),g:Fungi(0.96),s:Dikarya(0.96)	91
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.99),c:Cryptomonadales(0.99),o:Rhodomonas(0.99),f:Rhodomonas sp. CCMP743(0.91)	82
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.78),c:Stramenopiles(0.78),o:Ochrophyta(0.78),f:Chrysophyceae(0.78),g:Ochromonadales(0.77),s:Ochromonas(0.77)	56
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.78),c:Stramenopiles(0.78),o:Ochrophyta(0.78),f:Chrysophyceae(0.78),g:Ochromonadales(0.78),s:Ochromonas(0.78)	44
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.80),c:Cryptomonadales(0.79),o:Rhodomonas(0.59),f:Rhodomonas marina(0.51)	43
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.89),c:Cryptomonadales(0.89),o:Rhodomonas(0.83),f:Rhodomonas sp. CCMP743(0.83)	33
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.67),c:Obazoa(0.67),o:Opisthokonta(0.67),f:Nucletmycea(0.67),g:Fungi(0.66),s:Cryptomycota(0.49)	26
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.97),c:Cryptomonadales(0.97),o:Rhodomonas(0.97),f:Rhodomonas sp. CCMP743(0.97)	19
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.16),c:Stramenopiles(0.16),o:Ochrophyta(0.14),f:Chrysophyceae(0.14),g:Ochromonadales(0.07),s:Paraphysomonas(0.02)	15
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.82),c:Stramenopiles(0.80),o:Ochrophyta(0.79),f:Chrysophyceae(0.76),g:Ochromonadales(0.75),s:Ochromonas(0.75)	10
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.95),c:Cryptomonadales(0.95),o:Rhodomonas sp. KMMCC 574(0.77)	9
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.79),c:Obazoa(0.79),o:Opisthokonta(0.79),f:Nucletmycea(0.79),g:Fungi(0.79),s:Dikarya(0.79)	8
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.45),c:Obazoa(0.45),o:Opisthokonta(0.45),f:Nucletmycea(0.45),g:Fungi(0.45),s:Dikarya(0.45)	7
+Fluosample3	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	6
+Fluosample3	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	4
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.50),c:Obazoa(0.49),o:Opisthokonta(0.49),f:Holozoa(0.48),g:Choanozoa(0.48),s:Metazoa(0.48)	1
+Fluosample3	k:Eukaryota(1.00),p:Amorphea(0.87),c:Obazoa(0.87),o:Opisthokonta(0.87),f:Nucletmycea(0.87),g:Fungi(0.87),s:Dikarya(0.87)	1
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.68),c:Cryptomonadales(0.68),o:Rhodomonas(0.68),f:Rhodomonas abbreviata(0.12)	1
+Fluosample3	k:Eukaryota(1.00),p:Cryptophyceae(0.97),c:Cryptomonadales(0.97),o:Teleaulax(0.97),f:metagenome(0.97)	1
+Fluosample3	k:Eukaryota(1.00),p:SAR(0.82),c:Stramenopiles(0.81),o:Ochrophyta(0.78),f:Chrysophyceae(0.76),g:Ochromonadales(0.76),s:Ochromonas(0.76)	1
+Fluosample3	k:Eukaryota(1.00),p:SAR(1.00),c:Rhizaria(1.00),o:Cercozoa(1.00),f:Cercomonadidae(1.00),g:Cercomonas(0.90),s:Cercomonas sp. ATCC 50316(0.90)	1
+Fluosample3	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Chromulinales(1.00),s:Chromulina(0.31)	1
+Fluosample3	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(1.00),s:Ochromonas(1.00)	1
+Fluosample4	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	69
+Fluosample4	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	34
+Fluosample4	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	5
+Fluosample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Holozoa(1.00),g:Choanozoa(1.00),s:Metazoa(1.00)	4
+Fluosample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	4
+Fluosample4	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	4
+Fluosample4	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	4
+Fluosample4	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.89),f:Rhodomonas sp. CCMP743(0.89)	1
+Sample1	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	164683
+Sample1	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	31074
+Sample1	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	14921
+Sample1	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	8443
+Sample1	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	4783
+Sample1	k:Eukaryota(1.00),p:Amorphea(0.97),c:Obazoa(0.97),o:Opisthokonta(0.97),f:Nucletmycea(0.96),g:Fungi(0.96),s:Dikarya(0.96)	45
+Sample1	k:Eukaryota(1.00),p:SAR(0.86),c:Stramenopiles(0.86),o:Ochrophyta(0.82),f:Chrysophyceae(0.82),g:Ochromonadales(0.82),s:Ochromonas(0.82)	42
+Sample1	k:Eukaryota(1.00),p:Cryptophyceae(0.57),c:Cryptomonadales(0.57),o:Rhodomonas(0.57),f:Rhodomonas sp. CCMP743(0.57)	34
+Sample1	k:Eukaryota(1.00),p:Cryptophyceae(0.97),c:Cryptomonadales(0.97),o:Rhodomonas(0.97),f:Rhodomonas sp. CCMP743(0.97)	32
+Sample1	k:Eukaryota(1.00),p:Cryptophyceae(0.89),c:Cryptomonadales(0.89),o:Rhodomonas(0.83),f:Rhodomonas sp. CCMP743(0.83)	22
+Sample1	k:Eukaryota(1.00),p:Amorphea(0.87),c:Obazoa(0.87),o:Opisthokonta(0.87),f:Nucletmycea(0.87),g:Fungi(0.87),s:Dikarya(0.87)	18
+Sample1	k:Eukaryota(1.00),p:Amorphea(0.45),c:Obazoa(0.45),o:Opisthokonta(0.45),f:Nucletmycea(0.45),g:Fungi(0.45),s:Dikarya(0.45)	12
+Sample1	k:Eukaryota(1.00),p:Amorphea(0.85),c:Obazoa(0.83),o:Opisthokonta(0.83),f:Nucletmycea(0.83),g:Fungi(0.83),s:Dikarya(0.83)	10
+Sample1	k:Eukaryota(1.00),p:Discoba(0.48),c:Jakobida(0.48),o:uncultured dinoflagellate(0.48)	10
+Sample1	k:Eukaryota(1.00),p:Amorphea(0.98),c:Obazoa(0.98),o:Opisthokonta(0.98),f:Holozoa(0.31),g:Choanozoa(0.31),s:Metazoa(0.31)	9
+Sample1	k:Eukaryota(1.00),p:Archaeplastida(0.94),c:Chloroplastida(0.94),o:Charophyta(0.94),f:Phragmoplastophyta(0.94),g:Streptophyta(0.94),s:Embryophyta(0.94)	9
+Sample1	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	9
+Sample1	k:Eukaryota(1.00),p:Cryptophyceae(0.95),c:Cryptomonadales(0.95),o:Rhodomonas sp. KMMCC 574(0.77)	7
+Sample1	k:Eukaryota(1.00),p:Archaeplastida(0.76),c:Chloroplastida(0.75),o:Charophyta(0.75),f:Phragmoplastophyta(0.75),g:Streptophyta(0.75),s:Embryophyta(0.75)	4
+Sample1	k:Eukaryota(1.00),p:SAR(0.78),c:Stramenopiles(0.78),o:Ochrophyta(0.78),f:Chrysophyceae(0.78),g:Ochromonadales(0.78),s:Ochromonas(0.78)	3
+Sample1	k:Eukaryota(1.00),p:Archaeplastida(0.15),c:Chloroplastida(0.15),o:Charophyta(0.15),f:Phragmoplastophyta(0.15),g:Streptophyta(0.15),s:Embryophyta(0.15)	2
+Sample1	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.89),f:Rhodomonas sp. CCMP743(0.89)	2
+Sample1	k:Eukaryota(1.00),p:SAR(0.39),c:Rhizaria(0.23),o:Retaria(0.23),f:Polycystinea(0.23),g:Spumellaria(0.23),s:uncultured(0.24)	2
+Sample1	k:Eukaryota(1.00),p:Amorphea(0.90),c:Obazoa(0.90),o:Opisthokonta(0.90),f:Nucletmycea(0.89),g:Fungi(0.89),s:Dikarya(0.89)	1
+Sample1	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Holozoa(1.00),g:Choanozoa(1.00),s:Metazoa(1.00)	1
+Sample1	k:Eukaryota(1.00),p:Discoba(0.20),c:Jakobida(0.20),o:uncultured dinoflagellate(0.20)	1
+Sample1	k:Eukaryota(1.00),p:SAR(0.99),c:Stramenopiles(0.99),o:Ochrophyta(0.99),f:Chrysophyceae(0.99),g:Ochromonadales(0.98),s:Ochromonas(0.98)	1
+Sample1	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Protalveolata(1.00),f:Perkinsidae(0.98),g:A31(0.98),s:uncultured eukaryote(0.63)	1
+Sample2	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	214001
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	42612
+Sample2	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	22417
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(0.78),c:Chloroplastida(0.78),o:Charophyta(0.78),f:Phragmoplastophyta(0.78),g:Streptophyta(0.78),s:Embryophyta(0.78)	3221
+Sample2	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	2759
+Sample2	k:Eukaryota(1.00),p:SAR(0.94),c:Alveolata(0.94),o:Ciliophora(0.94),f:Intramacronucleata(0.94),g:Conthreep(0.94),s:Oligohymenophorea(0.94)	1438
+Sample2	k:Eukaryota(1.00),p:SAR(0.85),c:Stramenopiles(0.85),o:Ochrophyta(0.85),f:Chrysophyceae(0.85),g:Ochromonadales(0.82),s:Ochromonas(0.82)	1282
+Sample2	k:Eukaryota(1.00),p:SAR(0.97),c:Alveolata(0.39),o:Ciliophora(0.39),f:Intramacronucleata(0.39),g:Conthreep(0.39),s:Oligohymenophorea(0.37)	659
+Sample2	k:Eukaryota(1.00),p:SAR(0.99),c:Stramenopiles(0.99),o:Ochrophyta(0.99),f:Chrysophyceae(0.99),g:Ochromonadales(0.98),s:Ochromonas(0.98)	488
+Sample2	k:Eukaryota(1.00),p:SAR(0.98),c:Stramenopiles(0.90),o:Ochrophyta(0.90),f:Chrysophyceae(0.89),g:Ochromonadales(0.88),s:Ochromonas(0.88)	347
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(0.94),c:Chloroplastida(0.94),o:Charophyta(0.94),f:Phragmoplastophyta(0.94),g:Streptophyta(0.94),s:Embryophyta(0.94)	315
+Sample2	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	293
+Sample2	k:Eukaryota(1.00),p:SAR(0.72),c:Alveolata(0.72),o:Ciliophora(0.72),f:Intramacronucleata(0.71),g:Conthreep(0.69),s:Prostomatea(0.04)	212
+Sample2	k:Eukaryota(1.00),p:SAR(0.73),c:Alveolata(0.73),o:Ciliophora(0.73),f:Intramacronucleata(0.73),g:Conthreep(0.72),s:Oligohymenophorea(0.72)	144
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.66),c:Obazoa(0.65),o:Opisthokonta(0.65),f:Nucletmycea(0.65),g:Fungi(0.65),s:Dikarya(0.65)	131
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.85),c:Obazoa(0.83),o:Opisthokonta(0.83),f:Nucletmycea(0.83),g:Fungi(0.83),s:Dikarya(0.83)	83
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(0.72),c:Chloroplastida(0.72),o:Charophyta(0.72),f:Phragmoplastophyta(0.72),g:Streptophyta(0.72),s:Embryophyta(0.72)	58
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.96),c:Obazoa(0.96),o:Opisthokonta(0.96),f:Nucletmycea(0.96),g:Fungi(0.96),s:Dikarya(0.96)	43
+Sample2	k:Eukaryota(1.00),p:SAR(0.82),c:Stramenopiles(0.79),o:Ochrophyta(0.79),f:Chrysophyceae(0.79),g:Ochromonadales(0.79),s:Ochromonas(0.79)	40
+Sample2	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	37
+Sample2	k:Eukaryota(1.00),p:Cryptophyceae(0.57),c:Cryptomonadales(0.57),o:Rhodomonas(0.57),f:Rhodomonas sp. CCMP743(0.57)	31
+Sample2	k:Eukaryota(1.00),p:SAR(0.66),c:Alveolata(0.65),o:Ciliophora(0.63),f:Intramacronucleata(0.63),g:Conthreep(0.63),s:Oligohymenophorea(0.58)	29
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(0.99),c:Chloroplastida(0.99),o:Charophyta(0.99),f:Phragmoplastophyta(0.99),g:Streptophyta(0.99),s:Embryophyta(0.99)	27
+Sample2	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(0.99),o:Ochrophyta(0.97),f:Raphidophyceae(0.23),g:Chattonellales(0.23),s:Heterosigma(0.13)	26
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.37),c:Obazoa(0.25),o:Opisthokonta(0.25),f:Nucletmycea(0.23),g:Fungi(0.18),s:Dikarya(0.17)	20
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(0.15),c:Chloroplastida(0.15),o:Charophyta(0.15),f:Phragmoplastophyta(0.15),g:Streptophyta(0.15),s:Embryophyta(0.15)	12
+Sample2	k:Eukaryota(1.00),p:SAR(0.98),c:Stramenopiles(0.84),o:Ochrophyta(0.84),f:Phaeothamniophyceae(0.01),g:Pleurochloridales(0.01),s:Tetrasporopsis(0.01)	11
+Sample2	k:Eukaryota(1.00),p:Cryptophyceae(0.91),c:Cryptomonadales(0.91),o:Rhodomonas(0.91),f:Rhodomonas sp. CCMP743(0.91)	10
+Sample2	k:Eukaryota(1.00),p:SAR(0.78),c:Stramenopiles(0.78),o:Ochrophyta(0.78),f:Chrysophyceae(0.78),g:Ochromonadales(0.78),s:Ochromonas(0.78)	10
+Sample2	k:Eukaryota(1.00),p:Archaeplastida(0.71),c:Chloroplastida(0.71),o:Charophyta(0.71),f:Phragmoplastophyta(0.71),g:Streptophyta(0.71),s:Embryophyta(0.71)	7
+Sample2	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.89),f:Rhodomonas sp. CCMP743(0.89)	7
+Sample2	k:Eukaryota(1.00),p:SAR(0.86),c:Stramenopiles(0.86),o:Ochrophyta(0.82),f:Chrysophyceae(0.82),g:Ochromonadales(0.82),s:Ochromonas(0.82)	5
+Sample2	k:Eukaryota(1.00),p:SAR(0.39),c:Rhizaria(0.23),o:Retaria(0.23),f:Polycystinea(0.23),g:Spumellaria(0.23),s:uncultured(0.24)	4
+Sample2	k:Eukaryota(1.00),p:SAR(0.73),c:Alveolata(0.53),o:Ciliophora(0.50),f:Intramacronucleata(0.50),g:Conthreep(0.50),s:Oligohymenophorea(0.50)	4
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.70),c:Obazoa(0.70),o:Opisthokonta(0.70),f:Nucletmycea(0.70),g:Fungi(0.70),s:Dikarya(0.70)	3
+Sample2	k:Eukaryota(1.00),p:Cryptophyceae(0.31),c:Cryptomonadales(0.31),o:Teleaulax(0.12),f:uncultured marine eukaryote(0.05)	3
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.58),c:Obazoa(0.57),o:Opisthokonta(0.57),f:Nucletmycea(0.57),g:Fungi(0.56),s:Dikarya(0.56)	2
+Sample2	k:Eukaryota(1.00),p:Discoba(0.20),c:Jakobida(0.20),o:uncultured dinoflagellate(0.20)	2
+Sample2	k:Eukaryota(1.00),p:Amorphea(0.86),c:Obazoa(0.86),o:Opisthokonta(0.86),f:Nucletmycea(0.86),g:Fungi(0.81),s:Dikarya(0.81)	1
+Sample2	k:Eukaryota(1.00),p:Cryptophyceae(0.97),c:Cryptomonadales(0.97),o:Rhodomonas(0.97),f:Rhodomonas sp. CCMP743(0.97)	1
+Sample2	k:Eukaryota(1.00),p:Discoba(0.48),c:Jakobida(0.48),o:uncultured dinoflagellate(0.48)	1
+Sample2	k:Eukaryota(1.00),p:SAR(0.88),c:Stramenopiles(0.84),o:Ochrophyta(0.84),f:Chrysophyceae(0.43),g:P34.45(0.07),s:uncultured Chrysophyceae(0.07)	1
+Sample2	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Protalveolata(1.00),f:Perkinsidae(0.98),g:A31(0.98),s:uncultured eukaryote(0.63)	1
+Sample2	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.96),s:Ochromonas(0.96)	1
+Sample2	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(1.00),s:Ochromonas(1.00)	1
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	207409
+Sample3	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	134808
+Sample3	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	99546
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.91),c:Cryptomonadales(0.91),o:Rhodomonas(0.91),f:Rhodomonas sp. CCMP743(0.91)	4068
+Sample3	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	3175
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.31),c:Cryptomonadales(0.31),o:Teleaulax(0.12),f:uncultured marine eukaryote(0.05)	3012
+Sample3	k:Eukaryota(1.00),p:SAR(0.94),c:Alveolata(0.94),o:Ciliophora(0.94),f:Intramacronucleata(0.94),g:Conthreep(0.94),s:Oligohymenophorea(0.94)	2249
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.57),c:Cryptomonadales(0.57),o:Rhodomonas(0.57),f:Rhodomonas sp. CCMP743(0.57)	1849
+Sample3	k:Eukaryota(1.00),p:SAR(0.86),c:Stramenopiles(0.86),o:Ochrophyta(0.82),f:Chrysophyceae(0.82),g:Ochromonadales(0.82),s:Ochromonas(0.82)	1646
+Sample3	k:Eukaryota(1.00),p:SAR(0.98),c:Stramenopiles(0.90),o:Ochrophyta(0.90),f:Chrysophyceae(0.89),g:Ochromonadales(0.88),s:Ochromonas(0.88)	805
+Sample3	k:Eukaryota(1.00),p:SAR(0.97),c:Alveolata(0.39),o:Ciliophora(0.39),f:Intramacronucleata(0.39),g:Conthreep(0.39),s:Oligohymenophorea(0.37)	682
+Sample3	k:Eukaryota(1.00),p:SAR(0.90),c:Alveolata(0.90),o:Ciliophora(0.90),f:Intramacronucleata(0.90),g:Conthreep(0.90),s:Oligohymenophorea(0.90)	465
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.89),f:Rhodomonas sp. CCMP743(0.89)	458
+Sample3	k:Eukaryota(1.00),p:Discoba(1.00),c:Jakobida(1.00),o:uncultured dinoflagellate(1.00)	396
+Sample3	k:Eukaryota(1.00),p:SAR(0.81),c:Alveolata(0.79),o:Ciliophora(0.79),f:Intramacronucleata(0.79),g:Conthreep(0.79),s:Oligohymenophorea(0.79)	373
+Sample3	k:Eukaryota(1.00),p:SAR(0.99),c:Stramenopiles(0.99),o:Ochrophyta(0.99),f:Chrysophyceae(0.99),g:Ochromonadales(0.98),s:Ochromonas(0.98)	336
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.93),c:Obazoa(0.93),o:Opisthokonta(0.93),f:Nucletmycea(0.91),g:Fungi(0.91),s:Dikarya(0.89)	241
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.87),c:Obazoa(0.87),o:Opisthokonta(0.87),f:Nucletmycea(0.87),g:Fungi(0.87),s:Dikarya(0.87)	234
+Sample3	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	223
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.86),c:Obazoa(0.86),o:Opisthokonta(0.86),f:Nucletmycea(0.86),g:Fungi(0.81),s:Dikarya(0.81)	177
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.66),c:Obazoa(0.66),o:Opisthokonta(0.66),f:Nucletmycea(0.61),g:Fungi(0.61),s:Dikarya(0.61)	157
+Sample3	k:Eukaryota(1.00),p:SAR(0.78),c:Stramenopiles(0.78),o:Ochrophyta(0.78),f:Chrysophyceae(0.78),g:Ochromonadales(0.78),s:Ochromonas(0.78)	71
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.70),c:Obazoa(0.70),o:Opisthokonta(0.70),f:Nucletmycea(0.70),g:Fungi(0.70),s:Dikarya(0.70)	29
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.18),c:Cryptomonadales(0.17),o:uncultured(0.04),f:phytoplankton environmental sample(0.04)	23
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.95),c:Cryptomonadales(0.95),o:Rhodomonas sp. KMMCC 574(0.77)	21
+Sample3	k:Eukaryota(1.00),p:SAR(0.39),c:Rhizaria(0.23),o:Retaria(0.23),f:Polycystinea(0.23),g:Spumellaria(0.23),s:uncultured(0.24)	21
+Sample3	k:Eukaryota(1.00),p:Archaeplastida(0.56),c:Chloroplastida(0.56),o:Charophyta(0.56),f:Phragmoplastophyta(0.56),g:Streptophyta(0.56),s:Embryophyta(0.56)	19
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.89),c:Cryptomonadales(0.89),o:Rhodomonas(0.83),f:Rhodomonas sp. CCMP743(0.83)	10
+Sample3	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(0.99),o:Ochrophyta(0.97),f:Raphidophyceae(0.23),g:Chattonellales(0.23),s:Heterosigma(0.13)	10
+Sample3	k:Eukaryota(1.00),p:SAR(0.88),c:Stramenopiles(0.84),o:Ochrophyta(0.84),f:Chrysophyceae(0.43),g:P34.45(0.07),s:uncultured Chrysophyceae(0.07)	6
+Sample3	k:Eukaryota(1.00),p:Archaeplastida(0.95),c:Chloroplastida(0.95),o:Charophyta(0.95),f:Phragmoplastophyta(0.95),g:Streptophyta(0.95),s:Embryophyta(0.95)	5
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.45),c:Obazoa(0.45),o:Opisthokonta(0.45),f:Nucletmycea(0.45),g:Fungi(0.45),s:Dikarya(0.45)	4
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.67),c:Obazoa(0.67),o:Opisthokonta(0.67),f:Nucletmycea(0.58),g:Fungi(0.56),s:Dikarya(0.53)	4
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.33),c:Obazoa(0.32),o:Opisthokonta(0.32),f:Nucletmycea(0.27),g:Fungi(0.27),s:Dikarya(0.25)	3
+Sample3	k:Eukaryota(1.00),p:Discoba(0.20),c:Jakobida(0.20),o:uncultured dinoflagellate(0.20)	3
+Sample3	k:Eukaryota(1.00),p:SAR(0.30),c:Alveolata(0.28),o:Ciliophora(0.28),f:Intramacronucleata(0.28),g:Conthreep(0.28),s:Oligohymenophorea(0.28)	3
+Sample3	k:Eukaryota(1.00),p:Archaeplastida(0.15),c:Chloroplastida(0.15),o:Charophyta(0.15),f:Phragmoplastophyta(0.15),g:Streptophyta(0.15),s:Embryophyta(0.15)	2
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.58),c:Obazoa(0.57),o:Opisthokonta(0.57),f:Nucletmycea(0.57),g:Fungi(0.56),s:Dikarya(0.56)	1
+Sample3	k:Eukaryota(1.00),p:Amorphea(0.65),c:Obazoa(0.55),o:Opisthokonta(0.55),f:Nucletmycea(0.54),g:Fungi(0.54),s:Chytridiomycota(0.47)	1
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(0.97),c:Cryptomonadales(0.97),o:Teleaulax(0.97),f:metagenome(0.97)	1
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(0.85),f:Rhodomonas sp. CCMP743(0.85)	1
+Sample3	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas marina(0.87)	1
+Sample3	k:Eukaryota(1.00),p:SAR(0.73),c:Alveolata(0.73),o:Ciliophora(0.73),f:Intramacronucleata(0.73),g:Conthreep(0.72),s:Oligohymenophorea(0.72)	1
+Sample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Holozoa(1.00),g:Choanozoa(1.00),s:Metazoa(1.00)	4881
+Sample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(1.00)	2781
+Sample4	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Protalveolata(1.00),f:Perkinsidae(0.98),g:A31(0.98),s:uncultured eukaryote(0.63)	1030
+Sample4	k:Eukaryota(1.00),p:SAR(1.00),c:Alveolata(1.00),o:Ciliophora(1.00),f:Intramacronucleata(1.00),g:Conthreep(1.00),s:Oligohymenophorea(1.00)	388
+Sample4	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(1.00),f:Phragmoplastophyta(1.00),g:Streptophyta(1.00),s:Embryophyta(1.00)	156
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.97),c:Obazoa(0.97),o:Opisthokonta(0.97),f:Nucletmycea(0.96),g:Fungi(0.96),s:Dikarya(0.96)	33
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.97),c:Amoebozoa(0.94),o:Cavosteliida(0.93),f:Schizoplasmodiopsis pseudoendospora(0.93)	32
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.84),c:Obazoa(0.84),o:Opisthokonta(0.84),f:Nucletmycea(0.84),g:Fungi(0.84),s:Dikarya(0.84)	21
+Sample4	k:Eukaryota(1.00),p:Cryptophyceae(1.00),c:Cryptomonadales(1.00),o:Rhodomonas(1.00),f:Rhodomonas sp. CCMP743(1.00)	17
+Sample4	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Labyrinthulomycetes(1.00),f:Amphitraemidae(1.00),g:Diplophrys sp. ATCC_50360(1.00)	17
+Sample4	k:Eukaryota(1.00),p:SAR(1.00),c:Stramenopiles(1.00),o:Ochrophyta(1.00),f:Chrysophyceae(1.00),g:Ochromonadales(0.97),s:Ochromonas(0.97)	14
+Sample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(1.00),g:Fungi(1.00),s:Dikarya(0.99)	9
+Sample4	k:Eukaryota(1.00),p:SAR(0.94),c:Alveolata(0.94),o:Ciliophora(0.94),f:Intramacronucleata(0.94),g:Conthreep(0.94),s:Oligohymenophorea(0.94)	8
+Sample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(0.99),g:Fungi(0.99),s:Dikarya(0.99)	7
+Sample4	k:Eukaryota(1.00),p:Archaeplastida(0.42),c:Chloroplastida(0.42),o:Chlorophyta(0.35),f:Mamiellophyceae(0.32),g:Mamiellales(0.32),s:Micromonas(0.16)	7
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.99),c:Obazoa(0.99),o:Opisthokonta(0.99),f:Nucletmycea(0.99),g:Fungi(0.99),s:Dikarya(0.99)	6
+Sample4	k:Eukaryota(1.00),p:SAR(0.81),c:Alveolata(0.79),o:Ciliophora(0.79),f:Intramacronucleata(0.79),g:Conthreep(0.79),s:Oligohymenophorea(0.79)	6
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.97),c:Obazoa(0.97),o:Opisthokonta(0.97),f:Holozoa(0.97),g:Choanozoa(0.97),s:Metazoa(0.97)	5
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.99),c:Obazoa(0.99),o:Opisthokonta(0.99),f:Holozoa(0.99),g:Choanozoa(0.99),s:Metazoa(0.99)	4
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.41),c:Obazoa(0.40),o:Opisthokonta(0.40),f:Holozoa(0.39),g:Choanozoa(0.39),s:Metazoa(0.39)	3
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.96),c:Obazoa(0.96),o:Opisthokonta(0.96),f:Nucletmycea(0.96),g:Fungi(0.96),s:Dikarya(0.96)	2
+Sample4	k:Eukaryota(1.00),p:Archaeplastida(1.00),c:Chloroplastida(1.00),o:Charophyta(0.98),f:Phragmoplastophyta(0.98),g:Streptophyta(0.96),s:Embryophyta(0.96)	2
+Sample4	k:Eukaryota(1.00),p:SAR(0.66),c:Alveolata(0.65),o:Ciliophora(0.63),f:Intramacronucleata(0.63),g:Conthreep(0.63),s:Oligohymenophorea(0.58)	2
+Sample4	k:Eukaryota(1.00),p:SAR(0.73),c:Alveolata(0.73),o:Ciliophora(0.73),f:Intramacronucleata(0.73),g:Conthreep(0.72),s:Oligohymenophorea(0.72)	2
+Sample4	k:Eukaryota(1.00),p:SAR(0.81),c:Alveolata(0.81),o:Ciliophora(0.81),f:Intramacronucleata(0.81),g:Conthreep(0.81),s:Oligohymenophorea(0.80)	2
+Sample4	k:Eukaryota(1.00),p:SAR(0.87),c:Alveolata(0.79),o:Ciliophora(0.59),f:Intramacronucleata(0.59),g:Conthreep(0.55),s:Oligohymenophorea(0.55)	2
+Sample4	k:Eukaryota(1.00),p:SAR(0.93),c:Alveolata(0.91),o:Protalveolata(0.55),f:Syndiniales(0.18),g:Syndiniales Group I(0.10),s:uncultured eukaryote(0.08)	2
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.66),c:Obazoa(0.66),o:Opisthokonta(0.66),f:Nucletmycea(0.61),g:Fungi(0.61),s:Dikarya(0.61)	1
+Sample4	k:Eukaryota(1.00),p:Amorphea(0.85),c:Obazoa(0.85),o:Opisthokonta(0.85),f:Holozoa(0.85),g:Choanozoa(0.85),s:Metazoa(0.85)	1
+Sample4	k:Eukaryota(1.00),p:Amorphea(1.00),c:Obazoa(1.00),o:Opisthokonta(1.00),f:Nucletmycea(0.91),g:Fungi(0.91),s:Dikarya(0.91)	1
+Sample4	k:Eukaryota(1.00),p:Archaeplastida(0.87),c:Chloroplastida(0.87),o:Charophyta(0.87),f:Phragmoplastophyta(0.87),g:Streptophyta(0.87),s:Embryophyta(0.87)	1
+Sample4	k:Eukaryota(1.00),p:Archaeplastida(0.90),c:Chloroplastida(0.90),o:Charophyta(0.90),f:Phragmoplastophyta(0.90),g:Streptophyta(0.90),s:Embryophyta(0.90)	1
+Sample4	k:Eukaryota(1.00),p:Archaeplastida(0.95),c:Chloroplastida(0.95),o:Charophyta(0.95),f:Phragmoplastophyta(0.95),g:Streptophyta(0.95),s:Embryophyta(0.95)	1
+Sample4	k:Eukaryota(1.00),p:Cryptophyceae(0.31),c:Cryptomonadales(0.31),o:Teleaulax(0.12),f:uncultured marine eukaryote(0.05)	1
+Sample4	k:Eukaryota(1.00),p:SAR(0.40),c:Alveolata(0.38),o:Protalveolata(0.27),f:Perkinsidae(0.21),g:A31(0.21),s:uncultured microeukaryote(0.12)	1
