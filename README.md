@@ -16,7 +16,7 @@ The following samples were included:
 
 Raw sequencing data is available at https://zenodo.org/record/4769327
 
-Summary of the results available at https://github.com/manutamminen/epicpcr_1/blob/main/docs/index.md
+Summary of the results is available at https://github.com/manutamminen/epicpcr_1/blob/main/docs/index.md
 
 # Building
 
