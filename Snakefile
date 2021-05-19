@@ -375,6 +375,6 @@ rule report:
     mineral="figures/mineral_tanglegram.png",
     fluor="figures/fluor_tanglegram.png"
   output:
-    "reports/report.html",
+    "docs/index.md",
   script:
     "src/reporting/report.Rmd"
