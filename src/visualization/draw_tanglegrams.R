@@ -131,7 +131,8 @@ plot_euk_hist <- function(sample) {
     with(walk2(Ix, Count, ~ lines(c(1, (1 - .y)), c(.x, .x))))
 }
 
-pdf(snakemake@output[[1]])
+# pdf(snakemake@output[[1]])
+png(snakemake@output[[1]], units="in", width=5, height=5, res=300)
 
 lmat <- matrix(1:11, ncol = 11)
 layout(lmat, widths = c(2, rep(1, 4), 3, rep(1, 4), 2), heights = 1)
@@ -172,7 +173,8 @@ plot(ladderize(euk_tre), align.tip.label = TRUE,
 dev.off()
 
 
-pdf(snakemake@output[[2]])
+# pdf(snakemake@output[[2]])
+png(snakemake@output[[2]], units="in", width=5, height=5, res=300)
 
 lmat <- matrix(1:11, ncol = 11)
 layout(lmat, widths = c(2, rep(1, 4), 3, rep(1, 4), 2), heights = 1)

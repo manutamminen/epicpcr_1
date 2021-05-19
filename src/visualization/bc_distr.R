@@ -36,6 +36,7 @@ bc_counts <-
   bind_rows(bact_bc_counts, euk_bc_counts)
 
 
+png(snakemake@output[[1]], units="in", width=5, height=5, res=300)
 bc_counts %>%
   ggplot(aes(x = id, y = n)) +
   geom_density(stat = "identity") +
@@ -44,7 +45,8 @@ bc_counts %>%
   theme(strip.text.y = element_text(angle = 0),
         axis.text.x = element_text(angle = 90, hjust = 1),
         axis.text.y = element_text(size = 5))
-ggsave(snakemake@output[[1]], last_plot())
+dev.off()
+# ggsave(snakemake@output[[1]], last_plot())
 
 
 bact_bc_taxa <-
@@ -76,7 +78,7 @@ euk_bc_taxa <-
 bc_taxa <-
   bind_rows(bact_bc_taxa, euk_bc_taxa)
 
-
+png(snakemake@output[[2]], units="in", width=5, height=5, res=300)
 bc_taxa %>%
   ggplot(aes(x = id, y = n)) +
   geom_density(stat = "identity") +
@@ -85,5 +87,6 @@ bc_taxa %>%
   theme(strip.text.y = element_text(angle = 0),
         axis.text.x = element_text(angle = 90, hjust = 1),
         axis.text.y = element_text(size = 5))
-ggsave(snakemake@output[[2]], last_plot())
+dev.off()
+# ggsave(snakemake@output[[2]], last_plot())
 

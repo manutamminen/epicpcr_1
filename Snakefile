@@ -307,10 +307,10 @@ rule draw_bc_distributions:
     bact_bc_tax="data/final/16S_bc_tax.txt",
     euk_bc_tax="data/final/18S_bc_tax.txt"
   output:
-    bc_distr="figures/bc_distribution.pdf",
-    bc_tax_distr="figures/bc_tax_distribution.pdf"
+    bc_distr="figures/bc_distribution.png",
+    bc_tax_distr="figures/bc_tax_distribution.png"
   script:
-    "src/data/bc_distr.R"
+    "src/visualization/bc_distr.R"
 
 
 #########
@@ -321,9 +321,9 @@ rule connection_distribution:
   input:
     connections="tables/nonmock_euk_bact_connections.txt",
   output:
-    nonmag="figures/connection_distribution.pdf",
+    conn_distr="figures/connection_distribution.png",
   script:
-    "src/data/connection_distribution.R"
+    "src/visualization/connection_distribution.R"
 
 
 #########
@@ -337,10 +337,10 @@ rule draw_abundance_comparisons:
     bact_abunds="tables/16S_abunds.txt",
     euk_abunds="tables/18S_abunds.txt"
   output:
-    mineral="figures/bact_abunds.pdf",
-    fluor="figures/euk_abunds.pdf"
+    mineral="figures/bact_abunds.png",
+    fluor="figures/euk_abunds.png"
   script:
-    "src/data/draw_abund_comparisons.R"
+    "src/visualization/draw_abund_comparisons.R"
 
 
 #########
@@ -355,7 +355,26 @@ rule draw_tanglegrams:
     bact_abunds="tables/16S_abunds.txt",
     euk_abunds="tables/18S_abunds.txt"
   output:
-    mineral="figures/mineral_tanglegram.pdf",
-    fluor="figures/fluor_tanglegram.pdf"
+    mineral="figures/mineral_tanglegram.png",
+    fluor="figures/fluor_tanglegram.png"
   script:
-    "src/data/draw_tanglegrams.R"
+    "src/visualization/draw_tanglegrams.R"
+
+
+#########
+# Prepare markdown report
+#########
+
+rule report:
+  input:
+    bc_distr="figures/bc_distribution.png",
+    bc_tax_distr="figures/bc_tax_distribution.png",
+    conn_distr="figures/connection_distribution.png",
+    bact_abunds="figures/bact_abunds.png",
+    euk_abunds="figures/euk_abunds.png",
+    mineral="figures/mineral_tanglegram.png",
+    fluor="figures/fluor_tanglegram.png"
+  output:
+    "reports/report.html",
+  script:
+    "src/reporting/report.Rmd"

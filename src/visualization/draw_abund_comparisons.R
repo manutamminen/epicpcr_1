@@ -54,14 +54,26 @@ tip_coord <- function(tree) {
 
 bact_tip_coords <-
   tip_coord(bact_tre) %>%
+  separate(Tip, c("Taxonomy", "Abundance"), sep="____")
+
+bact_tip_labels <-
+  tip_coord(bact_tre) %>%
   separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
-  select(-Abundance)
+  mutate(Abundance = as.numeric(Abundance)) %>%
+  arrange(desc(Abundance)) %>%
+  head(10)
 
 
 euk_tip_coords <-
   tip_coord(euk_tre) %>%
+  separate(Tip, c("Taxonomy", "Abundance"), sep="____")
+
+euk_tip_labels <-
+  tip_coord(euk_tre) %>%
   separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
-  select(-Abundance)
+  mutate(Abundance = as.numeric(Abundance)) %>%
+  arrange(desc(Abundance)) %>%
+  head(10)
 
 
 bact_tip_percs <-
@@ -104,7 +116,8 @@ samples <-
 
 
 
-pdf(snakemake@output[[1]])
+# pdf(snakemake@output[[1]])
+png(snakemake@output[[1]], units="in", width=5, height=5, res=300)
 
 lmat <- matrix(1:10, ncol = 10)
 layout(lmat, widths = c(2, 1, 1, 1, 1, 1, 1, 1, 1, 5), heights = 1)
@@ -116,7 +129,7 @@ plot(ladderize(bact_tre), cex = 0.4,
 walk(samples, ~plot_hist(., tip_percs=bact_tip_percs))
 
 plot(NULL, xlim = c(0, 5e3), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
-bact_tip_coords %>%
+bact_tip_labels %>%
   with(walk2(Ix, Taxonomy, ~ text(0, .x, .y, cex=0.3)))
 
 dev.off()
@@ -124,7 +137,8 @@ dev.off()
 
 
 # pdf("../../figures/euk_abunds.pdf")
-pdf(snakemake@output[[2]])
+# pdf(snakemake@output[[2]])
+png(snakemake@output[[2]], units="in", width=5, height=5, res=300)
 
 lmat <- matrix(1:10, ncol = 10)
 layout(lmat, widths = c(2, 1, 1, 1, 1, 1, 1, 1, 1, 5), heights = 1)
@@ -136,7 +150,7 @@ plot(ladderize(euk_tre), cex = 0.4,
 walk(samples, ~plot_hist(., tip_percs=euk_tip_percs))
 
 plot(NULL, xlim = c(0, 5e3), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
-euk_tip_coords %>%
+euk_tip_labels %>%
   with(walk2(Ix, Taxonomy, ~ text(0, .x, .y, cex=0.6)))
 
 dev.off()

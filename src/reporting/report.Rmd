@@ -1,0 +1,67 @@
+---
+title: "Report of epicPCR experiment, Dec 18 2020"
+params:
+   rmd: "report.Rmd"
+output:
+  html_document:
+  highlight: tango
+  number_sections: no
+  theme: default
+  toc: yes
+  toc_depth: 3
+  toc_float:
+    collapsed: no
+    smooth_scroll: yes
+---
+
+## Samples
+
+- Fluosample1: Rhodomonas and Ochromonas cells; emulsion PCR in HFE7500 + 5% RAN surfactant
+- Fluosample2: Frozen waterwater + Rhodo and Ochro cells; 10e3 cells / ml; emulsion PCR in HFE7500 + 5% RAN surfactant
+- Fluosample3: Frozen waterwater + Rhodo and Ochro cells; 10e4 cells / ml; emulsion PCR in HFE7500 + 5% RAN surfactant
+- Fluosample4: Frozen wastewater; emulsion PCR in HFE7500 + 5% RAN surfactant
+- Sample1: Rhodomonas and Ochromonas cells; emulsion PCR in mineral oil + 4% Abil EM90
+- Sample2: Frozen waterwater + Rhodo and Ochro cells; 10e3 cells / ml; emulsion PCR in mineral oil + 4% Abil EM90
+- Sample3: Frozen waterwater + Rhodo and Ochro cells; 10e4 cells / ml; emulsion PCR in mineral oil + 4% Abil EM90
+- Sample4: Frozen wastewater; emulsion PCR in mineral oil + 4% Abil EM90
+
+## Barcode distributions
+
+<table>
+  <tr>
+    <td>Barcode distribution</td>
+    <td>Barcode taxonomy distribution</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="../../figures/bc_distribution.png"></td>
+    <td valign="top"><img src="../../figures/bc_tax_distribution.png"></td>
+  </tr>
+ </table>
+
+## Distribution of connections
+
+<td valign="top"><img src="../../figures/connection_distribution.png" width=500></td>
+
+
+## Bacterial abundance profile
+
+<td valign="top"><img src="../../figures/bact_abunds.png" ></td>
+
+
+## Eukaryotic abundance profile
+
+<td valign="top"><img src="../../figures/euk_abunds.png" ></td>
+
+
+## Tanglegram of the mineral oil reactions
+
+<td valign="top"><img src="../../figures/mineral_tanglegram.png" ></td>
+
+
+## Tanglegram of the HFE7500 reactions
+
+<td valign="top"><img src="../../figures/fluor_tanglegram.png" ></td>
+
+## Source
+<a download="report.Rmd" href="`r base64enc::dataURI(file = params$rmd, mime = 'text/rmd', encoding = 'base64')`">R Markdown source file (to produce this document)</a>
+
