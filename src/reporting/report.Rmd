@@ -31,27 +31,27 @@ output: md_document
 
 ## Distribution of connections
 
-<td valign="top"><img src="../../figures/connection_distribution.png" width=500></td>
+<td valign="top"><img src="../figures/connection_distribution.png" width=500></td>
 
 
 ## Bacterial abundance profile
 
-<td valign="top"><img src="../../figures/bact_abunds.png" ></td>
+<td valign="top"><img src="../figures/bact_abunds.png" ></td>
 
 
 ## Eukaryotic abundance profile
 
-<td valign="top"><img src="../../figures/euk_abunds.png" ></td>
+<td valign="top"><img src="../figures/euk_abunds.png" ></td>
 
 
 ## Tanglegram of the mineral oil reactions
 
-<td valign="top"><img src="../../figures/mineral_tanglegram.png" ></td>
+<td valign="top"><img src="../figures/mineral_tanglegram.png" ></td>
 
 
 ## Tanglegram of the HFE7500 reactions
 
-<td valign="top"><img src="../../figures/fluor_tanglegram.png" ></td>
+<td valign="top"><img src="../figures/fluor_tanglegram.png" ></td>
 
 ## Source
 <a download="report.Rmd" href="`r base64enc::dataURI(file = params$rmd, mime = 'text/rmd', encoding = 'base64')`">R Markdown source file (to produce this document)</a>
