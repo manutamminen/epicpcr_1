@@ -53,6 +53,3 @@ output: md_document
 
 <td valign="top"><img src="../figures/fluor_tanglegram.png" ></td>
 
-## Source
-<a download="report.Rmd" href="`r base64enc::dataURI(file = params$rmd, mime = 'text/rmd', encoding = 'base64')`">R Markdown source file (to produce this document)</a>
-
