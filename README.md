@@ -2,7 +2,7 @@
 
 Raw data available at https://zenodo.org/record/4769327
 
-Report available at https://github.com/manutamminen/epicpcr_1/blob/main/docs/index.md
+Summary of the results available at https://github.com/manutamminen/epicpcr_1/blob/main/docs/index.md
 
 # Building
 
