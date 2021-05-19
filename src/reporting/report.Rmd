@@ -24,8 +24,8 @@ output: md_document
     <td>Barcode taxonomy distribution</td>
   </tr>
   <tr>
-    <td valign="top"><img src="../../figures/bc_distribution.png"></td>
-    <td valign="top"><img src="../../figures/bc_tax_distribution.png"></td>
+    <td valign="top"><img src="../figures/bc_distribution.png"></td>
+    <td valign="top"><img src="../figures/bc_tax_distribution.png"></td>
   </tr>
  </table>
 
