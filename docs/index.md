@@ -44,12 +44,12 @@ Barcode taxonomy distribution
 <img src="../figures/connection_distribution.png" width=500>
 </td>
 
-## Bacterial abundance profile
+## Abundance profiles
 
 The abundance columns are:
 
--   Fluosample1: Rhodomonas and Ochromonas cells; emulsion PCR in
-    HFE7500 + 5% RAN surfactant
+-   Fluosample1:<span style="color:blue">Rhodomonas and Ochromonas
+    cells; emulsion PCR in HFE7500 + 5% RAN surfactant</span>
 -   Fluosample2: Frozen waterwater + Rhodo and Ochro cells; 10e3 cells /
     ml; emulsion PCR in HFE7500 + 5% RAN surfactant
 -   Fluosample3: Frozen waterwater + Rhodo and Ochro cells; 10e4 cells /
@@ -68,28 +68,6 @@ The abundance columns are:
 <td valign="top">
 <img src="../figures/bact_abunds.png" >
 </td>
-
-## Eukaryotic abundance profile
-
-The abundance columns are:
-
--   Fluosample1: Rhodomonas and Ochromonas cells; emulsion PCR in
-    HFE7500 + 5% RAN surfactant
--   Fluosample2: Frozen waterwater + Rhodo and Ochro cells; 10e3 cells /
-    ml; emulsion PCR in HFE7500 + 5% RAN surfactant
--   Fluosample3: Frozen waterwater + Rhodo and Ochro cells; 10e4 cells /
-    ml; emulsion PCR in HFE7500 + 5% RAN surfactant
--   Fluosample4: Frozen wastewater; emulsion PCR in HFE7500 + 5% RAN
-    surfactant
--   Sample1: Rhodomonas and Ochromonas cells; emulsion PCR in mineral
-    oil + 4% Abil EM90
--   Sample2: Frozen waterwater + Rhodo and Ochro cells; 10e3 cells / ml;
-    emulsion PCR in mineral oil + 4% Abil EM90
--   Sample3: Frozen waterwater + Rhodo and Ochro cells; 10e4 cells / ml;
-    emulsion PCR in mineral oil + 4% Abil EM90
--   Sample4: Frozen wastewater; emulsion PCR in mineral oil + 4% Abil
-    EM90
-
 <td valign="top">
 <img src="../figures/euk_abunds.png" >
 </td>
