@@ -5,7 +5,6 @@ library(ape)
 
 bact_abund_tips <-
   read.tree(snakemake@input[[1]]) %>%
-  # read.tree("../../data/final/16S.tre") %>%
   .$tip.label %>%
   tibble %>%
   separate(".", c("Taxonomy", "Abundance"), sep="____", remove=FALSE) %>%
@@ -17,7 +16,6 @@ bact_abund_tips <-
 
 bact_tre <-
     read.tree(snakemake@input[[1]]) %>%
-    # read.tree("../../data/final/16S.tre") %>%
     keep.tip(bact_abund_tips) %>%
     root(outgroup = "JQ837894.1.1415",
          resolve.root = TRUE)
@@ -25,7 +23,6 @@ bact_tre <-
 
 euk_abund_tips <-
   read.tree(snakemake@input[[2]]) %>%
-  # read.tree("../../data/final/18S.tre") %>%
   .$tip.label %>%
   tibble %>%
   separate(".", c("Taxonomy", "Abundance"), sep="____", remove=FALSE) %>%
@@ -37,7 +34,6 @@ euk_abund_tips <-
 
 euk_tre <-
     read.tree(snakemake@input[[2]]) %>%
-    # read.tree("../../data/final/18S.tre") %>%
     keep.tip(euk_abund_tips) %>%
     root(outgroup = "Human_18S_rRNA_gene",
          resolve.root = TRUE)
@@ -66,7 +62,6 @@ euk_tip_coords <-
 
 connections <-
     read_tsv(snakemake@input[[3]]) %>%
-    # read_tsv("../../tables/nonmock_euk_bact_connections.txt") %>%
     mutate(Eukaryotic_taxonomy = str_replace_all(Eukaryotic_taxonomy, ":", "_"),
            Eukaryotic_taxonomy = str_replace_all(Eukaryotic_taxonomy, "\\(", "__"),
            Eukaryotic_taxonomy = str_replace_all(Eukaryotic_taxonomy, "\\),", "__"),
@@ -78,12 +73,13 @@ connections <-
            Bacterial_taxonomy = str_replace_all(Bacterial_taxonomy, "\\)", ""),
            Bacterial_taxonomy = str_replace_all(Bacterial_taxonomy, " ", "_")) %>%
     inner_join(bact_tip_coords, by = c("Bacterial_taxonomy" = "Taxonomy")) %>%
-    inner_join(euk_tip_coords, by = c("Eukaryotic_taxonomy" = "Taxonomy"))
+    inner_join(euk_tip_coords, by = c("Eukaryotic_taxonomy" = "Taxonomy")) %>%
+    group_by(Sample) %>%
+    mutate(Perc = Count/sum(Count))
 
 
 bact_tip_percs <-
   read_tsv(snakemake@input[[4]]) %>%
-  # read_tsv("../../tables/16S_abunds.txt") %>%
   mutate(Taxonomy = str_replace_all(Taxonomy, ":", "_"),
          Taxonomy = str_replace_all(Taxonomy, "\\(", "__"),
          Taxonomy = str_replace_all(Taxonomy, "\\),", "__"),
@@ -96,7 +92,6 @@ bact_tip_percs <-
 
 euk_tip_percs <-
   read_tsv(snakemake@input[[5]]) %>%
-  # read_tsv("../../tables/18S_abunds.txt") %>%
   mutate(Taxonomy = str_replace_all(Taxonomy, ":", "_"),
          Taxonomy = str_replace_all(Taxonomy, "\\(", "__"),
          Taxonomy = str_replace_all(Taxonomy, "\\),", "__"),
@@ -107,110 +102,81 @@ euk_tip_percs <-
   mutate(Perc = Count / sum(Count))
 
 
-# samples <-
-#   c("Fluosample1", "Fluosample2", "Fluosample3", "Fluosample4",
-#     "Sample1", "Sample2", "Sample3", "Sample4")
+samples <-
+  euk_tip_percs %>%
+  .$Sample %>%
+  unique
+color_list <- sample(colors(), length(samples))
+sample_color_table <-
+  data.frame(Sample = samples,
+             Color = color_list)
 
-mineral_samples <-
-  c("Sample1", "Sample2", "Sample3", "Sample4")
 
-fluor_samples <-
-  c("Fluosample1", "Fluosample2", "Fluosample3", "Fluosample4")
-
-plot_bact_hist <- function(sample) {
+plot_bact_hist <- function(sample, color) {
   plot(NULL, xlim = c(0, 1e4), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
   bact_tip_percs %>%
     filter(Sample == sample) %>%
-    with(walk2(Ix, Count, ~ lines(c(0, .y), c(.x, .x))))
+    with(walk2(Ix, Count, ~ lines(c(0, .y), c(.x, .x), col=color)))
 }
 
-plot_euk_hist <- function(sample) {
+plot_euk_hist <- function(sample, color) {
   plot(NULL, xlim = c(-1e4, 0), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
   euk_tip_percs %>%
     filter(Sample == sample) %>%
-    with(walk2(Ix, Count, ~ lines(c(1, (1 - .y)), c(.x, .x))))
+    with(walk2(Ix, Count, ~ lines(c(1, (1 - .y)), c(.x, .x), col=color)))
 }
 
-# pdf(snakemake@output[[1]])
-png(snakemake@output[[1]], units="in", width=5, height=5, res=300)
-
-lmat <- matrix(1:11, ncol = 11)
-layout(lmat, widths = c(2, rep(1, 4), 3, rep(1, 4), 2), heights = 1)
-par(mar=c(1, 1, 1, 1))
-
-plot(ladderize(bact_tre), cex = 0.4,
-     align.tip.label = TRUE, show.tip.label = FALSE)
-
-walk(mineral_samples, plot_bact_hist)
-
-plot(NULL, xlim = c(0, 1), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
-
-connections %>%
-  filter(Sample == "Sample1") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("green", 0.05))))
-
-connections %>%
-  filter(Sample == "Sample2") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("red", 0.05))))
-
-connections %>%
-  filter(Sample == "Sample3") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("black", 0.05))))
-
-connections %>%
-  filter(Sample == "Sample4") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("orange", 0.05))))
-
-walk(rev(mineral_samples), plot_euk_hist)
-
-plot(ladderize(euk_tre), align.tip.label = TRUE,
-     direction = "leftwards", show.tip.label = FALSE)
-
-dev.off()
+plot_connections <- function(sample, color) {
+  connections %>%
+    filter(Sample == sample) %>%
+    with(pwalk(list(Ix.x, Ix.y),
+               ~ lines(c(0, 1), c(.x, .y), col = alpha(color, 0.05))))
+}
 
 
-# pdf(snakemake@output[[2]])
-png(snakemake@output[[2]], units="in", width=5, height=5, res=300)
+plot_tanglegram <- function(samples, color_list, normalize_connections=TRUE) {
+  sample_table <-
+    sample_color_table %>%
+    filter(Sample %in% samples)
 
-lmat <- matrix(1:11, ncol = 11)
-layout(lmat, widths = c(2, rep(1, 4), 3, rep(1, 4), 2), heights = 1)
-par(mar=c(1, 1, 1, 1))
+  sample_table$Color <- color_list
 
-plot(ladderize(bact_tre), cex = 0.4,
-     align.tip.label = TRUE, show.tip.label = FALSE)
+  if (normalize_connections)
+    connections$Perc <- 0.05
 
-walk(fluor_samples, plot_bact_hist)
+  widths <- c(2, rep(1, length(samples)), 3, rep(1, length(samples)), 2)
+  lmat <- matrix(1:length(widths), ncol = length(widths))
+  layout(lmat, widths = widths, heights = 1)
+  par(mar=c(1, 1, 1, 1))
 
-plot(NULL, xlim = c(0, 1), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
+  plot(ladderize(bact_tre), cex = 0.4,
+       align.tip.label = TRUE, show.tip.label = FALSE)
 
-connections %>%
-  filter(Sample == "Fluosample1") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("green", 0.05))))
+  sample_table %>%
+    with(walk2(Sample, Color, ~plot_bact_hist(.x, .y)))
 
-connections %>%
-  filter(Sample == "Fluosample2") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("red", 0.05))))
+  plot(NULL, xlim = c(0, 1), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
 
-connections %>%
-  filter(Sample == "Fluosample3") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("black", 0.05))))
+  connections %>%
+    filter(Sample %in% samples) %>%
+    with(pwalk(list(Ix.x, Ix.y, Sample, Perc),
+               function(Ixx, Ixy, Sample, Perc)
+                 lines(c(0, 1), c(Ixx, Ixy),
+                       col = alpha(sample_color_table[sample_color_table == Sample, 2], Perc))))
 
-connections %>%
-  filter(Sample == "Fluosample4") %>%
-  with(pwalk(list(Ix.x, Ix.y),
-             ~ lines(c(0, 1), c(.x, .y), col = alpha("orange", 0.05))))
+    sample_table %>%
+      map_dfr(rev) %>%
+      with(walk2(Sample, Color, ~plot_euk_hist(.x, .y)))
 
-walk(rev(fluor_samples), plot_euk_hist)
+    plot(ladderize(euk_tre), align.tip.label = TRUE,
+         direction = "leftwards", show.tip.label = FALSE)
+}
 
-plot(ladderize(euk_tre), align.tip.label = TRUE,
-     direction = "leftwards", show.tip.label = FALSE)
-
-dev.off()
+for (fname_ix in seq_along(snakemake@output)) {
+  png(snakemake@output[[fname_ix]], units="in", width=5, height=5, res=300)
+  plot_tanglegram(snakemake@params[[fname_ix]]$Samples,
+                  snakemake@params[[fname_ix]]$Colors,
+                  snakemake@params[[fname_ix]]$Normalize_connections)
+  dev.off()
+}
 

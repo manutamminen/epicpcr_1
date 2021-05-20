@@ -355,8 +355,23 @@ rule draw_tanglegrams:
     bact_abunds="tables/16S_abunds.txt",
     euk_abunds="tables/18S_abunds.txt"
   output:
-    mineral="figures/mineral_tanglegram.png",
-    fluor="figures/fluor_tanglegram.png"
+    "figures/mineral_tanglegram.png",
+    "figures/mineral_tanglegram_normalised.png",
+    "figures/fluor_tanglegram.png",
+    "figures/fluor_tanglegram_normalised.png"
+  params:
+    {'Samples' : ['Sample1', 'Sample2', 'Sample3', 'Sample4'],
+     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+     'Normalize_connections' : False},
+    {'Samples' : ['Sample1', 'Sample2', 'Sample3', 'Sample4'],
+     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+     'Normalize_connections' : True},
+    {'Samples' : ['Fluosample1', 'Fluosample2', 'Fluosample3', 'Fluosample4'],
+     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+     'Normalize_connections' : False},
+    {'Samples' : ['Fluosample1', 'Fluosample2', 'Fluosample3', 'Fluosample4'],
+     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+     'Normalize_connections' : True},
   script:
     "src/visualization/draw_tanglegrams.R"
 
