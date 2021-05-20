@@ -330,6 +330,10 @@ rule connection_distribution:
 # Draw abundance comparisons
 #########
 
+colors = ['Green', 'Orange', 'Red', 'Grey']
+mineral_samples = ['Sample1', 'Sample2', 'Sample3', 'Sample4']
+fluor_samples = ['Fluosample1', 'Fluosample2', 'Fluosample3', 'Fluosample4']
+
 rule draw_abundance_comparisons:
   input:
     bact_tre="data/final/16S.tre",
@@ -337,8 +341,17 @@ rule draw_abundance_comparisons:
     bact_abunds="tables/16S_abunds.txt",
     euk_abunds="tables/18S_abunds.txt"
   output:
-    mineral="figures/bact_abunds.png",
-    fluor="figures/euk_abunds.png"
+    "figures/bact_abunds.png",
+    "figures/euk_abunds.png"
+  params:
+    {'Type' : 'bacteria',
+     'Samples' : mineral_samples + fluor_samples,
+     'Colors' : colors + colors,
+     'N_Labels' : 20},
+    {'Type' : 'eukaryota',
+     'Samples' : mineral_samples + fluor_samples,
+     'Colors' : colors + colors,
+     'N_Labels' : 20}
   script:
     "src/visualization/draw_abund_comparisons.R"
 
@@ -360,17 +373,17 @@ rule draw_tanglegrams:
     "figures/fluor_tanglegram.png",
     "figures/fluor_tanglegram_normalised.png"
   params:
-    {'Samples' : ['Sample1', 'Sample2', 'Sample3', 'Sample4'],
-     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+    {'Samples' : mineral_samples,
+     'Colors' : colors,
      'Normalize_connections' : False},
-    {'Samples' : ['Sample1', 'Sample2', 'Sample3', 'Sample4'],
-     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+    {'Samples' : mineral_samples,
+     'Colors' : colors,
      'Normalize_connections' : True},
-    {'Samples' : ['Fluosample1', 'Fluosample2', 'Fluosample3', 'Fluosample4'],
-     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+    {'Samples' : fluor_samples,
+     'Colors' : colors,
      'Normalize_connections' : False},
-    {'Samples' : ['Fluosample1', 'Fluosample2', 'Fluosample3', 'Fluosample4'],
-     'Colors' : ['Green', 'Orange', 'Red', 'Grey'],
+    {'Samples' : fluor_samples,
+     'Colors' : colors,
      'Normalize_connections' : True},
   script:
     "src/visualization/draw_tanglegrams.R"

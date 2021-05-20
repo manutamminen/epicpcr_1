@@ -52,108 +52,84 @@ tip_coord <- function(tree) {
 }
 
 
-bact_tip_coords <-
-  tip_coord(bact_tre) %>%
-  separate(Tip, c("Taxonomy", "Abundance"), sep="____")
+plot_hist <- function(tip_percs, sample, color) {
+  plot(NULL, xlim = c(0, 1e4),
+       ylim = c(0, 1),
+       type='n',
+       axes=FALSE,
+       ann=FALSE)
 
-bact_tip_labels <-
-  tip_coord(bact_tre) %>%
-  separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
-  mutate(Abundance = as.numeric(Abundance)) %>%
-  arrange(desc(Abundance)) %>%
-  head(10)
-
-
-euk_tip_coords <-
-  tip_coord(euk_tre) %>%
-  separate(Tip, c("Taxonomy", "Abundance"), sep="____")
-
-euk_tip_labels <-
-  tip_coord(euk_tre) %>%
-  separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
-  mutate(Abundance = as.numeric(Abundance)) %>%
-  arrange(desc(Abundance)) %>%
-  head(10)
-
-
-bact_tip_percs <-
-  # read_tsv("../../tables/16S_abunds.txt") %>%
-  read_tsv(snakemake@input[[3]]) %>%
-  mutate(Taxonomy = str_replace_all(Taxonomy, ":", "_"),
-         Taxonomy = str_replace_all(Taxonomy, "\\(", "__"),
-         Taxonomy = str_replace_all(Taxonomy, "\\),", "__"),
-         Taxonomy = str_replace_all(Taxonomy, "\\)", ""),
-         Taxonomy = str_replace_all(Taxonomy, " ", "_")) %>%
-  inner_join(bact_tip_coords, by="Taxonomy") %>%
-  group_by(Sample) %>%
-  mutate(Perc = Count / sum(Count))
-
-
-euk_tip_percs <-
-  # read_tsv("../../tables/18S_abunds.txt") %>%
-  read_tsv(snakemake@input[[4]]) %>%
-  mutate(Taxonomy = str_replace_all(Taxonomy, ":", "_"),
-         Taxonomy = str_replace_all(Taxonomy, "\\(", "__"),
-         Taxonomy = str_replace_all(Taxonomy, "\\),", "__"),
-         Taxonomy = str_replace_all(Taxonomy, "\\)", ""),
-         Taxonomy = str_replace_all(Taxonomy, " ", "_")) %>%
-  inner_join(euk_tip_coords, by="Taxonomy") %>%
-  group_by(Sample) %>%
-  mutate(Perc = Count / sum(Count))
-
-
-plot_hist <- function(sample, tip_percs) {
-  plot(NULL, xlim = c(0, 5e3), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
   tip_percs %>%
     filter(Sample == sample) %>%
-    with(walk2(Ix, Count, ~ lines(c(0, .y), c(.x, .x))))
+    with(walk2(Ix, Count, ~ lines(c(0, .y), c(.x, .x), col=color)))
 }
 
 
-samples <-
-  c("Sample1", "Sample2", "Sample3", "Sample4",
-  "Fluosample1", "Fluosample2", "Fluosample3", "Fluosample4")
+plot_histograms <- function(type,
+                            samples,
+                            colors,
+                            no_labels=10) {
+
+  if (type == "bacteria") {
+    tree <- bact_tre
+    abunds <- read_tsv(snakemake@input[[3]])
+  } else {
+    tree <- euk_tre
+    abunds <- read_tsv(snakemake@input[[4]])
+  }
+
+  tip_coords <-
+    tip_coord(tree) %>%
+    separate(Tip, c("Taxonomy", "Abundance"), sep="____")
+
+  tip_labels <-
+    tip_coord(tree) %>%
+    separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
+    mutate(Abundance = as.numeric(Abundance)) %>%
+    arrange(desc(Abundance)) %>%
+    head(no_labels)
+
+  tip_percs <-
+    abunds %>%
+    mutate(Taxonomy = str_replace_all(Taxonomy, ":", "_"),
+           Taxonomy = str_replace_all(Taxonomy, "\\(", "__"),
+           Taxonomy = str_replace_all(Taxonomy, "\\),", "__"),
+           Taxonomy = str_replace_all(Taxonomy, "\\)", ""),
+           Taxonomy = str_replace_all(Taxonomy, " ", "_")) %>%
+    inner_join(tip_coords, by="Taxonomy") %>%
+    group_by(Sample) %>%
+    mutate(Perc = Count / sum(Count))
+
+  sample_table <-
+    data.frame(Sample = samples,
+               Color = colors)
+
+  widths <- c(2, rep(1, length(samples)), 8)
+  lmat <- matrix(1:length(widths), ncol = length(widths))
+  layout(lmat, widths = widths, heights = 1)
+  par(mar=c(1, 1, 1, 1))
+
+  plot(ladderize(tree), cex = 0.4,
+       align.tip.label = TRUE, show.tip.label = FALSE)
+
+  sample_table %>%
+    with(walk2(Sample, Color,
+               ~plot_hist(tip_percs=tip_percs, sample=.x, color=.y)))
+
+  plot(NULL, xlim = c(0, 5e3),
+       ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
+
+  tip_labels %>%
+    with(walk2(Ix, Taxonomy, ~ text(0, .x, .y, cex=0.6, adj=0)))
+}
 
 
-
-# pdf(snakemake@output[[1]])
-png(snakemake@output[[1]], units="in", width=5, height=5, res=300)
-
-lmat <- matrix(1:10, ncol = 10)
-layout(lmat, widths = c(2, 1, 1, 1, 1, 1, 1, 1, 1, 5), heights = 1)
-par(mar=c(1, 1, 1, 1))
-
-plot(ladderize(bact_tre), cex = 0.4,
-     align.tip.label = TRUE, show.tip.label = FALSE)
-
-walk(samples, ~plot_hist(., tip_percs=bact_tip_percs))
-
-plot(NULL, xlim = c(0, 5e3), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
-bact_tip_labels %>%
-  with(walk2(Ix, Taxonomy, ~ text(0, .x, .y, cex=0.3)))
-
-dev.off()
-
-
-
-# pdf("../../figures/euk_abunds.pdf")
-# pdf(snakemake@output[[2]])
-png(snakemake@output[[2]], units="in", width=5, height=5, res=300)
-
-lmat <- matrix(1:10, ncol = 10)
-layout(lmat, widths = c(2, 1, 1, 1, 1, 1, 1, 1, 1, 5), heights = 1)
-par(mar=c(1, 1, 1, 1))
-
-plot(ladderize(euk_tre), cex = 0.4,
-     align.tip.label = TRUE, show.tip.label = FALSE)
-
-walk(samples, ~plot_hist(., tip_percs=euk_tip_percs))
-
-plot(NULL, xlim = c(0, 5e3), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
-euk_tip_labels %>%
-  with(walk2(Ix, Taxonomy, ~ text(0, .x, .y, cex=0.6)))
-
-dev.off()
-
-
+for (fname_ix in seq_along(snakemake@output)) {
+  png(snakemake@output[[fname_ix]], units="in", width=8, height=5, res=300)
+  plot_histograms(snakemake@params[[fname_ix]]$Type,
+                  snakemake@params[[fname_ix]]$Samples,
+                  snakemake@params[[fname_ix]]$Colors,
+                  snakemake@params[[fname_ix]]$N_Labels)
+  dev.off()
+}
 
