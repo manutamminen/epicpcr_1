@@ -375,16 +375,20 @@ rule draw_tanglegrams:
   params:
     {'Samples' : mineral_samples,
      'Colors' : colors,
-     'Normalize_connections' : False},
+     'Normalize_connections' : False,
+     'N_Labels' : 20},
     {'Samples' : mineral_samples,
      'Colors' : colors,
-     'Normalize_connections' : True},
+     'Normalize_connections' : True,
+     'N_Labels' : 20},
     {'Samples' : fluor_samples,
      'Colors' : colors,
-     'Normalize_connections' : False},
+     'Normalize_connections' : False,
+     'N_Labels' : 20},
     {'Samples' : fluor_samples,
      'Colors' : colors,
-     'Normalize_connections' : True},
+     'Normalize_connections' : True,
+     'N_Labels' : 20},
   script:
     "src/visualization/draw_tanglegrams.R"
 

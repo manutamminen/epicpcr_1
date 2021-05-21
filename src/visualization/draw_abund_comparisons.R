@@ -4,7 +4,6 @@ library(ape)
 
 
 bact_abund_tips <-
-  # read.tree("../../data/final/16S.tre") %>%
   read.tree(snakemake@input[[1]]) %>%
   .$tip.label %>%
   tibble %>%
@@ -16,7 +15,6 @@ bact_abund_tips <-
 
 
 bact_tre <-
-  # read.tree("../../data/final/16S.tre") %>%
   read.tree(snakemake@input[[1]]) %>%
   keep.tip(bact_abund_tips) %>%
   root(outgroup = "JQ837894.1.1415",
@@ -24,7 +22,6 @@ bact_tre <-
 
 
 euk_abund_tips <-
-  # read.tree("../../data/final/18S.tre") %>%
   read.tree(snakemake@input[[2]]) %>%
   .$tip.label %>%
   tibble %>%
@@ -36,7 +33,6 @@ euk_abund_tips <-
 
 
 euk_tre <-
-  # read.tree("../../data/final/18S.tre") %>%
   read.tree(snakemake@input[[2]]) %>%
     keep.tip(euk_abund_tips) %>%
     root(outgroup = "Human_18S_rRNA_gene",

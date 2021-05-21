@@ -89,6 +89,12 @@ bact_tip_percs <-
   group_by(Sample) %>%
   mutate(Perc = Count / sum(Count))
 
+bact_tip_labels <-
+  tip_coord(bact_tre) %>%
+  separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
+  mutate(Abundance = as.numeric(Abundance)) %>%
+  arrange(desc(Abundance))
+
 
 euk_tip_percs <-
   read_tsv(snakemake@input[[5]]) %>%
@@ -102,14 +108,11 @@ euk_tip_percs <-
   mutate(Perc = Count / sum(Count))
 
 
-samples <-
-  euk_tip_percs %>%
-  .$Sample %>%
-  unique
-color_list <- sample(colors(), length(samples))
-sample_color_table <-
-  data.frame(Sample = samples,
-             Color = color_list)
+euk_tip_labels <-
+  tip_coord(euk_tre) %>%
+  separate(Tip, c("Taxonomy", "Abundance"), sep="____") %>%
+  mutate(Abundance = as.numeric(Abundance)) %>%
+  arrange(desc(Abundance))
 
 
 plot_bact_hist <- function(sample, color) {
@@ -119,12 +122,14 @@ plot_bact_hist <- function(sample, color) {
     with(walk2(Ix, Count, ~ lines(c(0, .y), c(.x, .x), col=color)))
 }
 
+
 plot_euk_hist <- function(sample, color) {
   plot(NULL, xlim = c(-1e4, 0), ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
   euk_tip_percs %>%
     filter(Sample == sample) %>%
     with(walk2(Ix, Count, ~ lines(c(1, (1 - .y)), c(.x, .x), col=color)))
 }
+
 
 plot_connections <- function(sample, color) {
   connections %>%
@@ -134,20 +139,28 @@ plot_connections <- function(sample, color) {
 }
 
 
-plot_tanglegram <- function(samples, color_list, normalize_connections=TRUE) {
+plot_tanglegram <- function(samples,
+                            color_list,
+                            normalize_connections=TRUE,
+                            n_labels) {
   sample_table <-
-    sample_color_table %>%
-    filter(Sample %in% samples)
-
-  sample_table$Color <- color_list
+    data.frame(Sample = samples,
+               Color = color_list)
 
   if (normalize_connections)
     connections$Perc <- 0.05
 
-  widths <- c(2, rep(1, length(samples)), 3, rep(1, length(samples)), 2)
+  widths <- c(5, 2, rep(1, length(samples)), 3, rep(1, length(samples)), 2, 5)
   lmat <- matrix(1:length(widths), ncol = length(widths))
   layout(lmat, widths = widths, heights = 1)
   par(mar=c(1, 1, 1, 1))
+
+  plot(NULL, xlim = c(0, 5e3),
+       ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
+
+  bact_tip_labels %>%
+    head(n_labels) %>%
+    with(walk2(Ix, Taxonomy, ~ text(5e3, .x, .y, cex=0.4, adj=1)))
 
   plot(ladderize(bact_tre), cex = 0.4,
        align.tip.label = TRUE, show.tip.label = FALSE)
@@ -162,21 +175,30 @@ plot_tanglegram <- function(samples, color_list, normalize_connections=TRUE) {
     with(pwalk(list(Ix.x, Ix.y, Sample, Perc),
                function(Ixx, Ixy, Sample, Perc)
                  lines(c(0, 1), c(Ixx, Ixy),
-                       col = alpha(sample_color_table[sample_color_table == Sample, 2], Perc))))
+                       col = alpha(sample_table[sample_table == Sample, 2], Perc))))
 
-    sample_table %>%
-      map_dfr(rev) %>%
-      with(walk2(Sample, Color, ~plot_euk_hist(.x, .y)))
+  sample_table %>%
+    map_dfr(rev) %>%
+    with(walk2(Sample, Color, ~plot_euk_hist(.x, .y)))
 
-    plot(ladderize(euk_tre), align.tip.label = TRUE,
-         direction = "leftwards", show.tip.label = FALSE)
+  plot(ladderize(euk_tre), align.tip.label = TRUE,
+       direction = "leftwards", show.tip.label = FALSE)
+
+  plot(NULL, xlim = c(0, 5e3),
+       ylim = c(0, 1), type='n', axes=FALSE, ann=FALSE)
+
+  euk_tip_labels %>%
+    head(n_labels) %>%
+    with(walk2(Ix, Taxonomy, ~ text(0, .x, .y, cex=0.4, adj=0)))
 }
 
+
 for (fname_ix in seq_along(snakemake@output)) {
-  png(snakemake@output[[fname_ix]], units="in", width=5, height=5, res=300)
+  png(snakemake@output[[fname_ix]], units="in", width=10, height=5, res=300)
   plot_tanglegram(snakemake@params[[fname_ix]]$Samples,
                   snakemake@params[[fname_ix]]$Colors,
-                  snakemake@params[[fname_ix]]$Normalize_connections)
+                  snakemake@params[[fname_ix]]$Normalize_connections,
+                  snakemake@params[[fname_ix]]$N_Labels)
   dev.off()
 }
 
