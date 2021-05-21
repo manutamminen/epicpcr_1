@@ -48,8 +48,8 @@ Barcode taxonomy distribution
 
 The abundance columns are:
 
--   Fluosample1:<span style="color:blue">Rhodomonas and Ochromonas
-    cells; emulsion PCR in HFE7500 + 5% RAN surfactant</span>
+-   Fluosample1: Rhodomonas and Ochromonas cells; emulsion PCR in
+    HFE7500 + 5% RAN surfactant
 -   Fluosample2: Frozen waterwater + Rhodo and Ochro cells; 10e3 cells /
     ml; emulsion PCR in HFE7500 + 5% RAN surfactant
 -   Fluosample3: Frozen waterwater + Rhodo and Ochro cells; 10e4 cells /
@@ -88,6 +88,9 @@ The abundance columns are:
 <td valign="top">
 <img src="../figures/mineral_tanglegram.png" >
 </td>
+<td valign="top">
+<img src="../figures/mineral_tanglegram_normalised.png" >
+</td>
 
 ## Tanglegram of the HFE7500 reactions
 
@@ -104,4 +107,7 @@ The abundance columns are:
 
 <td valign="top">
 <img src="../figures/fluor_tanglegram.png" >
+</td>
+<td valign="top">
+<img src="../figures/fluor_tanglegram_normalised.png" >
 </td>

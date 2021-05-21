@@ -60,6 +60,7 @@ The abundance columns are:
 - Sample4: Frozen wastewater; emulsion PCR in mineral oil + 4% Abil EM90
 
 <td valign="top"><img src="../figures/mineral_tanglegram.png" ></td>
+<td valign="top"><img src="../figures/mineral_tanglegram_normalised.png" ></td>
 
 
 ## Tanglegram of the HFE7500 reactions
@@ -72,4 +73,5 @@ The abundance columns are:
 - Fluosample4: Frozen wastewater; emulsion PCR in HFE7500 + 5% RAN surfactant
 
 <td valign="top"><img src="../figures/fluor_tanglegram.png" ></td>
+<td valign="top"><img src="../figures/fluor_tanglegram_normalised.png" ></td>
 
