@@ -85,9 +85,11 @@ The abundance columns are:
 -   Sample4: Frozen wastewater; emulsion PCR in mineral oil + 4% Abil
     EM90
 
+Non-normalised connections
 <td valign="top">
 <img src="../figures/mineral_tanglegram.png" >
 </td>
+Normalised connections
 <td valign="top">
 <img src="../figures/mineral_tanglegram_normalised.png" >
 </td>
@@ -105,9 +107,11 @@ The abundance columns are:
 -   Fluosample4: Frozen wastewater; emulsion PCR in HFE7500 + 5% RAN
     surfactant
 
+Non-normalised connections
 <td valign="top">
 <img src="../figures/fluor_tanglegram.png" >
 </td>
+Normalised connections
 <td valign="top">
 <img src="../figures/fluor_tanglegram_normalised.png" >
 </td>
