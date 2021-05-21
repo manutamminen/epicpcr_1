@@ -147,7 +147,7 @@ plot_tanglegram <- function(samples,
     data.frame(Sample = samples,
                Color = color_list)
 
-  if (normalize_connections)
+  if (!normalize_connections)
     connections$Perc <- 0.05
 
   widths <- c(5, 2, rep(1, length(samples)), 3, rep(1, length(samples)), 2, 5)
